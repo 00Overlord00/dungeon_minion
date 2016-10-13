@@ -26,12 +26,12 @@ app.use( session({
   cookie: { maxage: 60000, secure: false }
 }));
 
-app.use( passport.initialize() );
-app.use( passport.session() );
-
 router.get( '/', function( req, res ) {  //Determines base page.
   res.sendFile( path.resolve( 'views/index.html' ) );
 });
+
+app.use( passport.initialize() );
+app.use( passport.session() );
 
 app.listen( process.env.PORT || 8900, function() {  //Determines PORT.
   console.log( 'Hailing frequencies open. Listening on PORT 8900.' );

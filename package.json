@@ -1,4 +1,4 @@
-{
+npm {
   "name": "dungeon_minion",
   "version": "1.0.0",
   "description": "\"A game and character generation application for use with Dungeons & Dragons\"",
@@ -14,7 +14,7 @@
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
     "express-session": "^1.14.0",
-    "nodemon": "^1.10.0",
+    "nodemon": "^1.11.0",
     "passport": "^0.3.2",
     "passport-local": "^1.0.0",
     "pg": "^6.0.4",
